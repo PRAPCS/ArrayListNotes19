@@ -27,9 +27,14 @@ class Main {
      temp = garage.get(i);//get it out of the list
      System.out.println(temp);//run the toString method
    }
+   
+   System.out.println(garage.get(1).getColor());
 
+   if(garage.get(0).getColor().equals("Red"))
+      System.out.println("You have a red car");
 
-
+  for(Cars c:garage)
+     System.out.println(c.getColor());
 
   }
 }
